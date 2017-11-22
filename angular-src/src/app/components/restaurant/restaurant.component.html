@@ -1,0 +1,26 @@
+<div class="col-sm-6 col-md-4">
+<div class="foodsi-lista">
+  <div class="foodsi-listaa">
+
+
+
+    <img src="../assets/images/foodthai.JPG" class="foodsi-zdjecie" />
+
+
+          <div class="foodsi-nazwa">{{ restaurant.name }}</div>
+    <div class="foodsi-cena-przed">{{restaurant.originalPrice}} PLN</div>
+
+    <div class="foodsi-adres">{{restaurant.address}} </div>
+          <div class="foodsi-cena">{{restaurant.price}} PLN</div>
+
+
+
+<!--
+      <div class="foodsi-otwarcie">{{restaurant.startTime}}</div>
+-->
+      <a (click)="onSelect()" routerLink='restauracja'>Click</a>
+
+  </div>
+
+</div>
+</div>

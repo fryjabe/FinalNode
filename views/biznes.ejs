@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title id="pageTitle">FOODSI - Po co marnować?</title>
+        <link rel='icon' type='image/png' href='./images/favicon.png?v=2' />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-99028462-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/business.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="https://use.fontawesome.com/365c68a380.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+    </head>
+    <body>
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-toggleable-lg">
+     <div class="container">
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#navHeaderCollapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="/" id="logoP" class="nav navbar-left"><img id="logo" alt="Foodsi logo" title="Foodsi logo" src="/images/Foodsi_hor_color_white.svg" style="width:173px;"></a>
+        <div class="collapse navbar-collapse" id="navHeaderCollapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a id="dlaczego" href="#dlaczegoSekcja"> DLACZEGO FOODSI</a> </li>
+                <li><a id="jakToDziala" href="#jakToDzialaSekcja"> JAK TO DZIAŁA</a></li>
+                <li><a id="coZyskujesz" href="#coZyskujeszSekcja"> CO ZYSKUJESZ?</a></li>
+                <li><a href="/" class="btn btn-success" id="biznes" > PANEL KLIENTA </a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<div class="container-full">
+    <div id="logoSekcja" class="sec secMain">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class=" col-sm-2" >
+                    </div>
+                    <div class="col-sm-10 col-md-12">
+                        <h3>ZARABIAJ I&nbspWSPIERAJ ŚRODOWISKO.<br> </h3>
+                        <h2><b> PO CO MARNOWAĆ? </b></h2>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-xs-2"></div>
+                                    <div class="col-xs-8">
+<!--
+                                        <img alt="Google play badge" title="Google play badge" src="./images/google-play-badge.png" class="google-play-badge">
+-->
+                                    </div>
+                                    <div class="col-xs-2"></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-xs-2"></div>
+                                    <div class="col-xs-8">
+                                    </div>
+                                    <div class="col-xs-2"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class=" col-sm-0 col-md-0">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="row">
+                <div class=" col-sm-2" >
+                </div>
+                <div class="col-sm-10 col-lg-8">
+
+                     <form id="myWufoo" action="/send" method="POST">
+                         <label id="label" class="desc">Zostań naszym partnerem</label>
+
+                         <div class="arrow-down"></div>
+
+                         <ul id="lista-pol">
+
+
+                          <li class="complex">
+
+                              <div>
+                                  <span class="full">
+                                  <input class="field text addr" type="text" name="nazwaRestauracji" id="nazwaRestauracji"  value="" placeholder="Nazwa restauracji" required/>
+                                  </span>
+                                  <span class="left">
+                                  <input class="my-form-control" type="text" name="imie"  id="imie" value="" placeholder="Imię" required/>
+                                  </span>
+                                  <span class="right">
+                                  <input class="my-form-control" type="text" name="nazwisko" id="nazwisko"  value="" placeholder="Nazwisko" required/>
+                                  </span>
+                                  <span class="full">
+                                  <select class="my-form-control" id="liczbaLokalizacji" name="liczbaLokalizacji required">
+                                      <option value="Liczba lokalizacji" selected="selected">Liczba lokalizacji</option>
+                                      <option value="1">1</option>
+                                      <option value="2-5">2-5</option>
+                                      <option value="6-11">6-11</option>
+                                      <option value="12+">12+</option>
+                                  </select>
+                                  </span>
+                                  <span class="full">
+                                  <select class="my-form-control" id="rodzajKuchni" name="rodzajKuchni" required>
+                                      <option value="Rodzaj kuchni" selected="selected">Rodzaj kuchni</option>
+
+                                      <option value="Salad Place">Bar sałatkowy</option>
+                                      <option value="Sandwich Place">Bar kanapkowy</option><option value="Burger Joint">Bar z burgerami</option>
+                                      <option value="Dessert Shop">Cukiernia</option>
+                                      <option value="Food Truck">Food truck</option>
+                                      <option value="Cafe">Kawiarnia</option>
+                                      <option value="Brunch Spot">Lokal serwujący brunche</option>
+                                      <option value="Pizza Place">Pizzeria</option>
+                                      <option value="American Restaurant">Restauracja amerykańska</option>
+                                      <option value="Middle Eastern Restaurant">Restauracja bliskowschodnia</option>
+                                      <option value="Chinese Restaurant">Restauracja chińska</option>
+                                      <option value="European Restaurant">Restauracja europejska</option>
+                                      <option value="French Restaurant">Restauracja francuska</option>
+                                      <option value="Greek Restaurant">Restauracja grecka</option>
+                                      <option value="Halal Restaurant">Restauracja halal</option>
+                                      <option value="Spanish Restaurant">Restauracja hiszpańska</option>
+                                      <option value="Indian Restaurant">Restauracja indyjska</option>
+                                      <option value="Japanese Restaurant">Restauracja japońska</option>
+                                      <option value="Caribbean Restaurant">Restauracja karaibska</option>
+                                      <option value="Korean Restaurant">Restauracja koreańska</option>
+                                      <option value="Kosher Restaurant">Restauracja koszerna</option>
+                                      <option value="Mexican Restaurant">Restauracja meksykańska</option>
+                                      <option value="Latin American Restaurant">Restauracja południowoamerykańska</option>
+                                      <option value="Steakhouse">Restauracja serwująca steki</option>
+                                      <option value="Thai Restaurant">Restauracja tajska</option>
+                                      <option value="Vegetarian / Vegan Restaurant">Restauracja wegetariańska/wegańska</option>
+                                      <option value="Vietnamese Restaurant">Restauracja wietnamska</option>
+                                      <option value="Italian Restaurant">Restauracja włoska</option>
+                                      <option value="Mediterranean Restaurant">Restauracja śródziemnomorska</option>
+                                      <option value="Other">Inne</option>
+                                  </select>
+                                  </span>
+                                  <span class="full">
+                                  <input class="my-form-control" type="text" id="numerTelefonu" name="numerTelefonu"   maxlength="15" value="" placeholder="Numer telefonu" required/>
+                                  </span>
+                                  <span class="full">
+                                  <input class="my-form-control" type="email" id="adresEmail" name="adresEmail"  maxlength="255" value="" placeholder="Adres email" required/>
+                                  </span>
+                                  </div>
+                              </li>
+                              <li>
+          <button id="saveForm" class="button_sliding_bg" type="submit">Prześlij </button>
+
+      </li>
+  </ul>
+                                        </form>
+
+                </div>
+
+                <div class="col-sm-2 col-lg-2">
+
+                </div>
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+
+            $( "#myWufoo" ).submit(function( event ) {
+
+                event.preventDefault();
+                var required = $('[required]'); // change to [required] if not using true option as part of the attribute as it is not really needed.
+                var error = false;
+
+                for(var i = 0; i <= (required.length - 1);i++)
+                {   required[i].style.backgroundColor = 'rgb(255,255,255)'
+                    if(required[i].value == '') // tests that each required value does not equal blank, you could put in more stringent checks here if you wish.
+                    {
+                        required[i].style.backgroundColor = 'rgb(255,155,155)';
+                        error = true; // if any inputs fail validation then the error variable will be set to true;
+                    }
+                }
+
+                if(error) // if error is true;
+                {
+                    return false; // stop the form from being submitted.
+                }
+                console.log("form has been submited");
+                $.ajax({
+                    type: "POST",
+                    url: "/send",
+                    data: {
+                        nazwaRestauracji: $('#nazwaRestauracji').val(),
+                        imie: $('#imie').val(),
+                        nazwisko: $('#nazwisko').val(),
+                        liczbaLokalizacji: $('#liczbaLokalizacji').val(),
+                        rodzajKuchni: $('#rodzajKuchni').val(),
+                        numerTelefonu: $('#numerTelefonu').val(),
+                        adresEmail: $('#adresEmail').val()
+                    },
+                    success: function(data){
+                        console.log("form has succedeed");
+                        $( "#myWufoo" ).replaceWith( '<form id="myWufoo" style="margin-bottom: 233px;"></div>  <label class="desc">Dziękujemy za zainteresowanie! Niedługo skontaktujemy się z państwem.</label>');
+
+                    },
+                    error: function(){
+                        alert('Twoja formularz nie mogł zostać wysłany. Spróbuj ponownie');
+                    }
+                });
+            });
+
+
+
+
+    </script>
+
+    <div id="dlaczegoSekcja" class="subSec secOne">
+
+        <div class="row">
+
+            <div class="col-sm-6">
+
+                <div class="row">
+                    <div class="col-sm-2">
+                    </div>
+                    <div class="col-sm-8 hidden-xs">
+                        <img alt="Mockup of a phone with application screenshots" title="Gif with screenshots" src="/images/AndroidMockup.gif" class="phonemockupSecondSecond">
+                    </div>
+                    <div class="col-sm-2">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 textDiv">
+
+                <div class="row">
+                    <div class="col-sm-2 col-md-1">
+                    </div>
+                    <div class="col-sm-8 zysk ukryte">
+                        <h3>DLACZEGO <b>FOODSI?</b></h3><br>
+                        <p>To proste! Foodsi to łatwy i wygodny sposob na zarobek. Określasz jakiego typu jesteś restauracją, a następnie sprzedajesz produkty, które w przeciwnym wypadku zostałyby wyrzucone. Nie musisz określać co dokładnie chcesz sprzedać, a jedynie ilość zestawów oraz o której godzinie klient ma się po nie stawić.</p>
+
+                    </div>
+                    <div class="col-sm-2 col-md-1">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--<div class="row">
+            <div class="col-xs-3 col-sm-4">
+            </div>
+            <div class="col-xs-6 col-sm-4">
+                <p>Foodsi to łatwy i wygodny sposob na zarobek. Określasz jakiego typu jesteś restauracją, a następnie sprzedajesz produkty, które w przeciwnym wypadku zostałyby wyrzucone. To proste! Nie musisz określać co dokładnie chcesz sprzedać a jedynie ilość zestawów oraz o której godzinie klient ma się po nie stawić.</p>
+            </div>
+        </div>-->
+
+    </div>
+    <div id="jakToDzialaSekcja" class="sec secTwo">
+        <div class="row">
+        <br>
+<!--
+            <h3>JAK TO <b>DZIAŁA?</b></h3>
+-->
+
+            <br /><br>
+
+            <div class="col-sm-3">
+                <div class="card">
+                    <i class="fa fa-check-square-o fa-5x"style="color:#7FBA00" aria-hidden="true"></i>
+                    <h2>Wypełnij formularz</h2>
+
+                    <p>Skontaktujemy się z Tobą mailowo.</p>
+
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <i class="fa fa fa-mobile fa-5x"style="color:#7FBA00" aria-hidden="true"></i>
+                    <h2>Ściągnij aplikację</h2>
+                    <p>Ustal kiedy i ile posiłków chcesz sprzedać.</p>
+
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <i class="fa fa-users fa-5x" style="color:#7FBA00" aria-hidden="true"></i>
+                    <h2>Przywitaj klientów</h2>
+                    <p>Sprawdź dowody zakupu i wręcz pudełka z jedzeniem.</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <i class="fa fa-credit-card fa-5x" style="color:#7FBA00" aria-hidden="true"></i>
+                    <h2>Zarabiaj</h2>
+                    <p>Ciesz się z nowych klientów.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--asdfasdfadfadfadsfasdf-->
+
+
+
+    </div>
+
+
+    <div id="coZyskujeszSekcja" class="subSec secThree">
+
+        <div class="row">
+            <div class="col-sm-6 textDiv">
+
+                 <div class="row">
+                                        <div class="col-sm-1"></div>
+                                        <div class="col-sm-5 zysk ukryte">
+                                            <h3>DODATKOWY <b>PRZYCHÓD.</b></h3>
+                                            <p>Zyskaj nowych klientów, którzy w innym wypadku mogliby nigdy nie mieć styczności z lokalem.
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-5 zysk ukryte">
+                                            <h3>DARMOWA <b>PROMOCJA.</b></h3>
+                                            <p>Dotrzyj do większego grona odbiorców poprzez ekspozycje oferty w aplikacji.
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-1"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3"></div>
+                                        <div class="col-sm-6 zysk ukryte">
+                                            <h3>REDUKCJA <b>GENEROWANYCH ODPADÓW.</b></h3>
+                                            <p>Zmniejsz koszty pozbywania się odpadów i przysłuż się środowisku.
+                                            </p>
+                                        </div>
+
+                                        <div class="col-sm-3"></div>
+                                    </div>
+
+            </div>
+            <div class="col-sm-6 ">
+
+                <div class="row">
+                    <div class="col-sm-1">
+                    </div>
+                    <div class="col-sm-10">
+                        <img alt="Mockup of a phone with application screenshots" title="Gif with screenshots" src="/images/phone-pixel.png" class="phonemockupSecond" id="secondPhone">
+                    </div>
+                    <div class="col-sm-1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<%- include footer.ejs %>
+<!--<footer>
+    <ul>
+        <div class="row">
+            <div class="col-sm-3">
+                <h4>FOODSI.PL</h4>
+                <li>STRONA GLOWNA</li>
+                <li>O NAS</li>
+                <li>KONTAKT</li>
+            </div>
+            <div class="col-sm-3">
+                <h4>DLA PARTNERÓW</h4>
+                <li>DODAJ RESTAURACJĘ</li>
+                </div>
+                <div class="col-sm-3">
+                    <h4>INFORMACJE PRAWNE</h4>
+                    <li>RETULAMIN</li>
+                </div>
+
+
+            <div class="col-sm-3">
+                <h4>ZNAJDŹ NAS</h4>
+                <li></lo><i class="fa fa-facebook " aria-hidden="true"></i>- FACEBOOK</li>
+                <li></lo><i class="fa fa-instagram " aria-hidden="true"></i>- INSTAGRAM</li>
+
+            </div>
+        </div>
+        <hr>
+        <li>© 2017 Foodsi.pl</li>
+
+    </ul>
+</footer>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+<script src="/js/app.js"></script>
+<script src="/js/navshrink.js"></script>
+<script src="/js/ukryjTekst.js"></script>
+<script src="/js/wyjedzTelefon.js"></script>
+
+</body>
+</html>

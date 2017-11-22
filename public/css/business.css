@@ -1,0 +1,768 @@
+*{
+    margin:0;
+}
+.linkPress
+{color: #7DD82E;font-family: 'Roboto', sans-serif;border-bottom: solid 3px #7DD82E;display: inline;padding-bottom: 3px;}
+.linkPress:hover{
+    color: #5eaf2c;
+    border-bottom: solid 3px #5eaf2c
+}
+html, body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    max-width: 1560px;
+    text-align: center;
+}
+
+div.container-full
+{
+    padding:0px;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+
+}
+/*
+nav.navbar.shrink{
+    transition:background-color 1s ease-in-out, height 0.6s ease-in-out;
+    background-color: rgba(34, 34, 34, 0.9);
+    height:60px;
+    padding-top: 7px;
+
+}
+
+nav.navbar{
+    position: fixed;
+    width:100%;
+    height:80px;
+    transition:background-color 1s ease-in-out, height 0.6s ease-in-out;
+
+    background-color: rgba(34, 34, 34, 0.5);
+    text-align: center;
+    padding-top: 14px;
+    border:none;
+
+
+
+}
+a#logo{
+    margin-top:-16px;
+    vertical-align: top;
+    font-family: 'Roboto', sans-serif;
+}
+nav a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    weight:400;
+    line-height: 80px;
+    font-size:13px;
+
+}
+a#biznes.btn.btn-success{
+    font-family: 'Roboto', sans-serif;
+    margin-top:8px;
+    padding: 6px;
+
+}
+nav li{
+    margin-right:15px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #dadada;
+}
+*/
+nav.navbar.shrink{
+    transition:background-color 1s ease-in-out, height 0.6s ease-in-out;
+    background-color: rgba(34, 34, 34, 0.9);
+    height:60px;
+    padding-top: 7px;
+
+}
+nav.navbar-inverse ul{
+    background-color: rgba(34, 34, 34, 0);
+
+}
+
+nav.navbar{
+    position: fixed;
+    width:100%;
+    height:80px;
+    transition:background-color 1s ease-in-out, height 0.6s ease-in-out;
+
+    background-color: rgba(34, 34, 34, 0.5);
+    text-align: center;
+    padding-top: 14px;
+    border:none;
+    max-width: 1560px;
+    margin: 0 auto;
+
+
+}
+#logoP{
+    margin-top: -17px !important;
+    vertical-align: top;
+
+
+}
+/*a#logo{
+
+    vertical-align: top;
+    font-family: 'Roboto', sans-serif;
+}*/
+nav a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color:green;
+    weight:400;
+    line-height: 80px;
+    font-size:13px;
+
+
+}
+a#biznes.btn.btn-success {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    padding: 6px;
+}
+#biznes{
+    color:white;
+    background-color:rgba(0, 0, 0, 0.1);
+    border-color: #7dd82e;
+}
+#biznes:hover{
+    background-color: #7dd82e;
+
+}
+#zobaczvideo{
+    background-color: rgba(0, 0, 0, 0 );
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding-top: 0px;
+    color:white;
+    border:none;
+
+
+}
+#zobaczvideo p{
+
+    font-size: 20px;
+
+
+}
+
+nav li{
+    margin-right:15px;
+
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #dadada;
+}
+.sec{
+    height:100%;
+    background-size: cover;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    color:#222222;
+}
+
+.subSec{
+    height:50%;
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    color:#222222;
+
+
+}
+
+.secMain{
+    background-image: url("../images/biznesMain1.jpg");
+    background-attachment: fixed;
+    padding-bottom: 100px;
+    text-align: center;
+
+
+}
+/*.secMain span{
+    background: rgba(0, 0, 0, 0.9);
+    padding:8px;
+
+
+}*/
+.secMain h3{
+    padding-top: 200px;
+    color:white;
+    font-size:34px;
+}
+.secMain h2{
+    color:white;
+    font-size:45px;
+}
+#contact-form{
+    padding-top:160px;
+
+}
+.display-none {
+    display: none;
+}
+.video{
+    margin-top: 150px;
+    margin-left: 40px;
+}
+.google-play-badge{
+    width:190px;
+    margin-top:20px;
+
+
+}
+.phonemockup{
+    margin-top:70px;
+    width:250px;
+}
+
+.secOne{
+    text-align: center;
+    padding-top:20px;
+
+
+
+}
+.secOne  h3{
+    font-size:34px;
+    font-weight: 100;
+
+}
+.secOne  h2{
+    font-size:25px;
+    font-weight: normal;
+
+}
+.secOne  p{
+    font-family: 'Open Sans', sans-serif;
+    font-size:15px;
+    font-weight: normal;
+    color: #444444;
+
+
+}
+
+
+
+.secTwo{
+    height:50%;
+    background-attachment: fixed;
+    text-align: center;
+    padding-bottom:80px;
+    margin-top: 80px;
+    background-color: #f3f3f3;
+
+
+}
+
+.secTwo  p{
+    list-style-type: none;
+    padding-left:0;
+    font-family: 'Open Sans', sans-serif;
+    font-size:15px;
+    font-weight: normal;
+    color: #444444;
+
+
+}
+.secTwo  h3{
+    font-size:34px;
+    font-weight: 100;
+
+}
+.phonemockupSecondSecond{
+    width:300px;
+    margin-top: -200px;
+
+}
+
+
+
+
+
+
+.secThree{
+    text-align: center;
+
+}
+
+.textDiv{
+    margin-top:50px;
+    margin-bottom:20px;
+}
+.secThree p {
+    list-style-type: none;
+    padding-left:0;
+    font-family: 'Open Sans', sans-serif;
+    font-size:15px;
+    font-weight: normal;
+    color: #444444;
+
+}
+.secThree  h3{
+    font-size:25px;
+    font-weight: 100;
+}
+/*
+* === Animate text ===
+*/
+.subSec.secThree div.zysk{
+    transform-style: preserve-3d;
+    transform:perspective(800px);
+
+
+}
+
+.subSec.secThree div.zysk h3, .subSec.secThree div.zysk p{
+    transition: all 0.8s ease;
+}
+
+.subSec.secThree div.zysk.ukryte h3{
+    opacity: 0;
+    transform: translate3d(0,0,400px) rotateY(-40deg);
+}
+.subSec.secThree div.zysk.ukryte p{
+    opacity: 0;
+    transform: translate3d(0,0,400px) rotateY(40deg);
+}
+.phonemockupSecond{
+    width:250px;
+    margin-bottom:-950px;
+}
+
+
+
+footer{
+    padding:70px;
+    background-color:#222222;
+    color: #e7e7e7;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    position: relative;
+
+
+}
+
+footer ul{
+    list-style-type: none;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+
+
+
+}
+footer a{
+    color:white;
+    font-size:12px;
+    padding:3px;
+
+
+
+}
+footer a:hover{
+    color:#7DD82E;
+    text-decoration: none;
+
+
+}
+
+/* - - - - - - - - - - - - - - - - - - - - -
+
+ Title : Example Custom CSS : DinoMaster!
+ URL : http://wufoo.com
+
+ Last Updated : April 1, 2011
+
+- - - - - - - - - - - - - - - - - - - - -
+
+INSTRUCTIONS
+1. Copy / Paste all or portions of these
+CSS rules into "custom.css".
+
+2. Experiment and play.
+
+- - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - placeholders - - - */
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #A6A5A5;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #A6A5A5;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #A6A5A5;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    #A6A5A5;
+}
+
+/* Logo */
+
+.my-form-control{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    padding: 8px;
+    background-color: white;
+    width:70%
+
+}
+form li.complex div span.full input, form li.complex div span.full select, form li.complex div span.left input, form li.complex div span.right input, form li.complex div span.left select, form li.complex div span.right select {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    padding: 8px;
+    background-color: white;
+}
+
+input.medium, select.medium{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    padding: 8px;
+    background-color: white;
+    width:100%
+}
+/* ----- Field Structure ----- */
+form ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+
+* html form ul {
+    /* IE6 Margin Percent Bug for Halves/Thirds */
+    width: 99%;
+    zoom: 1; }
+
+form li {
+    margin: 0;
+    padding: 6px 1% 9px 1%;
+    clear: both;
+    background-color: transparent;
+    position: relative;
+    /* Makes Instructs z-index stay on top in IE. */
+    -webkit-transition: background-color 350ms ease-out;
+    -moz-transition: background-color 350ms ease-out;
+    -o-transition: background-color 350ms ease-out;
+    transition: background-color 350ms ease-out; }
+
+form ul:after, form li:after, form li div:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+
+* html form li {
+    height: 1%;
+    margin-bottom: -3px; }
+
+* + html form li {
+    height: 1%;
+    margin-bottom: -3px; }
+
+* html form li div {
+    display: inline-block; }
+
+* + html form ul, * + html form li div {
+    display: inline-block; }
+
+form li div {
+    margin: 0;
+    padding: 0;
+    color: #444; }
+
+form li span {
+    margin: 0 .3em 0 0;
+    padding: 0;
+    float: left;
+    color: #444; }
+
+/* ----- Choices Field Structures ----- */
+form li div span {
+    margin: 0;
+    display: block;
+    width: 100%;
+    float: left; }
+
+li.twoColumns div span {
+    width: 48%;
+    margin: 0 5px 0 0; }
+
+li.threeColumns div span {
+    width: 30%;
+    margin: 0 5px 0 0; }
+
+li.notStacked div span {
+    width: auto;
+    margin: 0 7px 0 0; }
+/* ----- Location Field Structures ----- */
+form li.complex {
+    padding-bottom: 0; }
+
+form li.complex div span {
+    width: auto;
+    margin: 0 .3em 0 0;
+    padding-bottom: 12px; }
+
+form li.complex div span.full {
+    margin: 0; }
+
+form li.complex div span.left,
+form li.complex div span.right {
+    margin: 0;
+    width: 48%; }
+
+form li.complex div span.full input,
+form li.complex div span.full select,
+form li.complex div span.left input,
+form li.complex div span.right input,
+form li.complex div span.left select,
+form li.complex div span.right select {
+    width: 100%; }
+
+/* ----- FLOATS ----- */
+.left {
+    float: left; }
+
+.right {
+    float: right; }
+
+.full {
+    width: 100% !important; }
+
+.clear {
+    clear: both !important; }
+
+label span, .section span, p span, .likert span {
+    display: inline !important;
+    float: none !important; }
+
+form li.complex div span{
+    margin: 0;
+    padding:1px;
+}
+label.desc, legend.desc{
+    font-size: 28px;
+    font-weight: normal;
+    color:white;
+}
+#myWufoo{
+    margin-top: 150px;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    border-radius: 25px;
+    text-align: center}
+
+#lista-pol{
+    margin-left: 30px;
+    margin-right: 30px;
+
+
+}
+
+#liczbaLokalizacji{
+    line-height: 36px; }
+
+#rodzajKuchni{
+    line-height: 36px; }
+
+.arrow-down {
+    margin-top:0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    margin:0 auto;
+    border-top: 20px solid #7DD82E;
+}
+
+#label{
+
+    text-align: center;
+    background: #7DD82E;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    font-size: 20px;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+
+}
+/* Backgrounds */
+.wufoo input.text, .wufoo textarea.textarea{background:#FFFFFF repeat-x top}
+.wufoo .focused{background:#FFF7C0}
+.wufoo .instruct{background-color:#F5F5F5}
+
+/* Borders */
+#container{border:0 solid #cccccc}
+.wufoo .info{border-bottom:1px dotted #CCCCCC}
+.wufoo .instruct{border:1px solid #e6e6e6}
+
+/* Typography */
+.wufoo .info h2{font-size:160%;font-family:inherit;color:#000000}
+.wufoo .info div{font-size:95%;font-family:inherit;color:#444444}
+.wufoo .section h3{font-size:110%;font-family:inherit;background:#FFFFFF;color:#000000}
+.wufoo .section div{font-size:85%;font-family:inherit;color:#444444}
+.wufoo label.desc, .wufoo legend.desc{width:100%;font-family:inherit;color:#444444}
+.wufoo li div, .wufoo li div label, .wufoo li span label{font-family:inherit;color:#444444}
+.wufoo input.text, .wufoo textarea.textarea, .wufoo select.select, .wufoo label.choice{font-size:100%;font-family:inherit;color:#333333}
+.wufoo label.choice{color:#444444}
+.wufoo .instruct{font-size:80%;font-family:inherit;color:#444444
+}/* - - - - - - - - - - - - - - - - - - - - -
+Form css
+button below
+
+
+- - - - - - - - - - - - - - - - - - - - - */
+
+.button_sliding_bg {
+    color: #FFF;
+    background-color: rgba(125, 216, 46, 0.6);
+    padding: 10px 10px;
+    width:50%;
+    margin-top: 10px;
+    box-shadow: 5px 5px 2px #888888;
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border:none;
+    border-radius: 3px;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    transition: all ease 1s;
+}
+.button_sliding_bg:hover {
+    box-shadow: inset 1000px 0 0 0 #7DD82E;
+
+
+}
+/*
+* === Navbar collapse breakpoint ===
+*/
+@media (max-width: 767px) {
+
+    .secMain{
+        padding-bottom: 20px;
+
+    }
+    .secMain h3{
+        padding-top: 110px;
+
+    }
+
+     .secOne{
+         padding-bottom: 0px;
+    }
+
+     .secTwo{
+         padding-bottom: 20px;
+         margin-top:30px;
+
+     }
+    .textDiv{
+        margin-top:10px;
+        margin-bottom:  0px;
+    }
+
+
+
+    #myWufoo{
+        margin-top: 40px;
+    }
+
+    .secThree{
+        margin-top: 20px;
+    }
+
+}
+
+@media (min-width: 900px) {
+    .google-play-badge{
+        width:180px;
+
+
+    }
+}
+
+@media ( max-width: 1200px) {
+    .navbar-header {
+        float: none;
+    }
+    nav.navbar-inverse ul{
+        background-color: rgba(34, 34, 34, 0.9);
+
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 52.5px;
+        width: 100%;
+
+
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+
+
+}
+@media ( max-width: 760px) {
+    #lista-pol{
+        margin-left: 5px;
+        margin-right: 5px;
+
+
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 0px;
+
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+
+<header class="row spacing">
+  <nav class="col-md-8 col-md-offset-2">
+    <ul class="nav nav-tabs">
+      <li routerLinkActive="active"><a (click)="registerView()" >Zarejestruj</a></li>
+      <li routerLinkActive="active"><a (click)="logInView()">Zaloguj</a></li>
+    </ul>
+  </nav>
+</header>
+<!--<div class="row spacing">
+  <router-outlet></router-outlet>
+</div>-->
+<div *ngIf="register" class="row spacing">
+  <app-signup></app-signup>
+</div>
+<div *ngIf="login" class="row spacing">
+  <app-signin></app-signin>
+</div>
+

@@ -1,0 +1,67 @@
+.container{
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right:0;
+    background-color: #F2F2F4;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.foodsi-zdjecie{
+    width: 100%;
+
+}
+.foodsi-lista{
+    background-color: white;
+    padding: 40px;
+}
+
+#info-box{
+    margin-top: -150px;
+    background-color: rgba(255,255,255,0.5);
+    padding:70px;
+
+}
+#logo{
+    width: 100px;
+}
+
+#foodsi-kup-navbar{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    padding-left: 40%;
+
+
+
+
+
+}
+
+#foodsi-nav-el {
+
+    padding: 7px;
+    width: 120px;
+
+}
+#foodsi-nav-otwarte {
+    padding: 4px;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+    width: 100px;
+}
+
+
+@media (min-width: 0px){
+.container {
+    width: 100%;
+}
+}
+
+
+
+
+

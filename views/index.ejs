@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title id="pageTitle">FOODSI - Po co marnować?</title>
+        <link rel='icon' type='image/png' href='./images/favicon.png?v=3' />
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-99028462-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="/css/lightbox.css">
+        <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="https://use.fontawesome.com/365c68a380.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    </head>
+    <body>
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-toggleable-lg">
+
+
+    <div class="container">
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#navHeaderCollapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="/" class="nav navbar-left"><img id="logo" alt="Foodsi logo" title="Foodsi logo" src="/images/Foodsi_hor_color_white.svg" style="width:173px;"></a>
+
+        <div class="collapse navbar-collapse" id="navHeaderCollapse">
+
+            <ul class="nav navbar-nav navbar-inverse navbar-right">
+                <li><a id="jakToDziala" href="#jakToDzialaSekcja"> JAK TO DZIAŁA</a></li>
+                <li><a id="video" href="#videoSekcja"> VIDEO</a> </li>
+                <li><a id="coZyskujesz" href="#coZyskujeszSekcja"> CO ZYSKUJESZ?</a></li>
+                <li><a id="sciagnij" href="#sciagnijSekcja"> ŚCIĄGNIJ</a></li>
+<!--
+                <li><a id="onas" href="/onas"> O NAS</a></li>
+-->
+
+                <li><a href="/biznes" class="btn btn-success" id="biznes" > DOŁĄCZ JAKO RESTAURACJA</a></li>
+
+
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+
+<div class="container-full">
+
+    <div id="logoSekcja" class="sec secMain">
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class=" col-sm-2 col-md-2" >
+                    </div>
+                    <div class="col-xs-12 col-sm-10 col-md-10">
+                        <h3><b>ZJEDZ SMACZNIE ZA&nbspMNIEJ</b> </h3>
+                        <h2><mark class="hash">#</mark>niemarnuję </h2>
+
+
+
+                        <div id="mc_embed_signup">
+                            <form id="mojaForma" action="/nowysubskrybent" method="POST">
+                                <div id="mc_embed_signup_scroll">
+                                    <label for="mce-EMAIL">Powiadom mnie o dostępności aplikacji</label>
+                                    <div class="arrow-down"></div>
+                                    <input type="email" value="" name="email" class="email" id="email" placeholder="Twój email" required>
+                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ed5228e6b7917e1814b78e1f3_002ba3e6d3" tabindex="-1" value=""></div>
+                                    <div class="clear"><input type="submit" value="Prześlij" name="subscribe" class="button"></div>
+                                </div>
+                            </form>
+                        </div>
+
+            <script>
+            $( "#mojaForma" ).submit(function( event ) {
+                console.log("form has been submited");
+
+                event.preventDefault();
+                var required = $('[required]'); // change to [required] if not using true option as part of the attribute as it is not really needed.
+                var error = false;
+
+
+
+                    if(required[0].value == '') // tests that each required value does not equal blank, you could put in more stringent checks here if you wish.
+                    {
+
+                        required[0].style.backgroundColor = 'rgb(255,155,155)';
+                        error = true; // if any inputs fail validation then the error variable will be set to true;
+                    }
+
+
+                if(error) // if error is true;
+                {
+                    return false; // stop the form from being submitted.
+                }
+                    console.log("form has been submited");
+                    $.ajax({
+                        type: "POST",
+                        url: "/nowysubskrybent",
+                        data: {email: $('#email').val()},
+                        success: function (nowy) {
+                            console.log("form has succedeed");
+                            $(".secMain #mc_embed_signup").replaceWith('<br><div id="mc_embed_signup"> <div id="mc_embed_signup_scroll"> <label for="mce-EMAIL">Dziękujemy! Wkrótce zostaniesz powiadomiony o premierze aplikacji.</label> <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ed5228e6b7917e1814b78e1f3_002ba3e6d3" tabindex="-1" value=""></div> </div> </div>');
+
+                        },
+                        error: function () {
+                            alert('Twoja formularz nie mogł zostać wysłany. Spróbuj ponownie');
+                        }
+                    });
+
+            });
+
+
+            </script>
+            <br>
+                        <!--End mc_embed_signup-->
+                        <button id="zobaczvideo" href=""> <i onclick="startLightBox()" class="fa fa-play-circle fa-5x" aria-hidden="true"></i><p>JAK TO DZIAŁA</p></button><br>
+
+                        <!--<div class="row">
+                            <div class="col-sm-6 ">
+                                <div class="row">
+                                    <div class="col-xs-4 col-md-6 col-lg-4">
+&lt;!&ndash;
+                                        <img alt="Google play badge" title="Google play badge" src="./images/google-play-badge.png" class="google-play-badge">
+&ndash;&gt;
+
+
+                                    </div>
+                                    <div class="col-xs-4 col-md-6 col-lg-4">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-xs-4 col-md-6 col-lg-4">
+
+                                    </div>
+                                    <div class="col-xs-4 col-md-6 col-lg-4">
+
+                                    </div>                                </div>
+                            </div>
+
+                        </div>-->
+
+                    </div>
+                    <div class=" col-sm-0 col-md-0">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3" >
+                    </div>
+                    <div class="col-xs-4 col-sm-8 hidden-xs">
+                        <img alt="Mockup of a phone with application screenshots" title="Gif with screenshots" src="/images/AndroidMockup.gif" class="phonemockup">
+                    </div>
+                    <div class="col-xs-4 col-sm-1">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="jakToDzialaSekcja" class="subSec secOne">
+        <div class="row">
+            <h3>JAK TO <b>DZIAŁA?</b></h3>
+
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6"><p id="onas">Dzięki aplikacji Foodsi, możesz kupić posiłek z pobliskiej restauracji nawet<b> o&nbsp70% taniej</b>.
+                    Posiłki są przecenione ponieważ nie zostały kupione i następnego dnia nie byłyby zdatne do sprzedaży.
+
+                </p>
+                <hr class="hr">
+            </div>
+            <div class="col-lg-3"></div>
+            </div>
+<br>
+            <div class="row">
+
+                <div class="col-sm-4">
+                    <div class="card">
+                        <i class="fa fa-search fa-5x"style="color:#7FBA00" aria-hidden="true"></i>
+                        <h2>Znajdź</h2>
+
+                        <p>Wybierz jedzenie z pobliskiej restauracji przy użyciu funkcji lokalizacji GPS.</p>
+
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <i class="fa fa-handshake-o fa-5x"style="color:#7FBA00" aria-hidden="true"></i>
+                        <h2>Zamów</h2>
+                        <p>Kup pyszny posiłek, na który masz ochotę.</p>
+
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <i class="fa fa-cutlery fa-5x" style="color:#7FBA00" aria-hidden="true"></i>
+                        <h2>Odbierz</h2>
+                        <p>O ustalonej porze staw się po swoje zamówienie i zabierz je do domu. Smacznego!</p>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    <div id="videoSekcja" class="sec secTwo">
+
+
+                <img onclick="startLightBox()" alt="Play button for introduction video" id= "playIcon" src="./images/play_icon.png" />
+
+
+    </div>
+
+
+    <div id="coZyskujeszSekcja" class="subSec secThree">
+
+        <div class="row">
+            <div class="col-md-5">
+
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+                        <img alt="Mockup of a phone with application screenshots" title="Gif with screenshots" src="/images/AndroidMockup.gif" class="phonemockupSecond">
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+            <div class="col-md-7 textDiv">
+
+                    <div class="row">
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-5 zysk ukryte">
+                            <h3>TANIE I PYSZNE <b>JEDZENIE.</b></h3>
+                            <p>Kupuj posiłki nawet o&nbsp<B>70% taniej!</B>
+                            </p>
+                        </div>
+                        <div class="col-sm-5 zysk ukryte">
+                            <h3>ODKRYWASZ NOWE <b> SMAKI.</b></h3>
+                            <p>Niskie ceny dań restauracyjnych pozwolą Ci na odkrycie nowych potraw zapewniając bogactwo smaków Twojego posiłku każdego dnia.
+                            </p>
+                        </div>
+                        <div class="col-sm-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-10 zysk ukryte">
+                            <h3>WSPIERASZ <b>ŚRODOWISKO.</b></h3>
+                            <p>Każdego roku w Polsce marnuje się aż <b>9 milionów ton</b></b> jedzenia. Korzystając z aplikacji  Foodsi pomagasz  nam rozwiązać problem marnowania świeżego i smacznego jedzenia, które
+                                dzięki Tobie trafia na talerz a nie do kosza.
+
+                            </p>
+                        </div>
+
+                        <div class="col-sm-1"></div>
+                    </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="sciagnijSekcja" class="sec secFour">
+
+
+                <h3>ŚCIĄGNIJ APLIKACJE W</h3>
+
+        <div id="mc_embed_signup">
+            <form id="mojaForma1" action="/nowysubskrybent" method="POST">
+                <div id="mc_embed_signup_scroll">
+                    <label for="mce-EMAIL">Powiadom mnie kiedy aplikacja będzie dostępna.</label>
+                    <input type="email" value="" name="email2" class="email" id="email2" placeholder="Twój email" required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ed5228e6b7917e1814b78e1f3_002ba3e6d3" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="Prześlij" name="subscribe" class="button"></div>
+                </div>
+            </form>
+        </div>
+                <!--<img src="./images/google-play-badge.png" style="text-align:center;
+                width:155px;
+                display:block;
+                margin:auto;"/>-->
+
+
+        <script>
+            $( "#mojaForma1" ).submit(function( event ) {
+                event.preventDefault();
+                var required = $('[required]'); // change to [required] if not using true option as part of the attribute as it is not really needed.
+                var error = false;
+
+
+                    if(required[1].value == '') // tests that each required value does not equal blank, you could put in more stringent checks here if you wish.
+                    {
+                        required[1].style.backgroundColor = 'rgb(255,155,155)';
+                        error = true; // if any inputs fail validation then the error variable will be set to true;
+                    }
+
+
+                if(error) // if error is true;
+                {
+                    return false; // stop the form from being submitted.
+                }else {
+                    console.log("form has been submited");
+                    $.ajax({
+                        type: "POST",
+                        url: "/nowysubskrybent",
+                        data: {email: $('#email2').val()},
+                        success: function (nowy) {
+                            console.log("form has succedeed");
+                            $(".secFour #mc_embed_signup").replaceWith('<br><div id="mc_embed_signup"> <div id="mc_embed_signup_scroll"> <label for="mce-EMAIL">Dziękujemy! Wkrótce zostaniesz powiadomiony o premierze aplikacji.</label> <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ed5228e6b7917e1814b78e1f3_002ba3e6d3" tabindex="-1" value=""></div> </div> </div>');
+
+                        },
+                        error: function () {
+                            alert('Twoja formularz nie mogł zostać wysłany. Spróbuj ponownie');
+                        }
+                    });
+                }
+            });
+
+
+        </script>
+    </div>
+<%- include lightbox.ejs %>
+</div>
+<%- include footer.ejs %>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+<script src="/js/app.js"></script>
+<script src="/js/lightbox.js"></script>
+<script src="/js/navshrink.js"></script>
+<script src="/js/ukryjTekst.js"></script>
+
+
+</body>
+</html>

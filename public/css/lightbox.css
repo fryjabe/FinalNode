@@ -1,0 +1,22 @@
+#lightBoxBg{
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                opacity: 0.5;
+                display: flex;
+                background-color: #000000;
+                height: 100%;
+                width: 100%;
+                display: none;
+
+}
+
+
+#lightBox{
+                          position: fixed;
+                          top: 25%;
+                            align: center;
+                            width:100%;
+                          display: none;
+
+                      }
